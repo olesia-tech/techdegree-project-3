@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  }
+
+  .container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2 {
+    
+    text-align: center;
+  }
+
+header {
+  width: 100%;
+  color: white;
+  background-color: rgb(47, 47, 47);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+section {
+  text-align: center;
+  margin-bottom: 10px;
+}
