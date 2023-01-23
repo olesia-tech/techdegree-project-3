@@ -5,7 +5,7 @@
   font-family: 'Merriweather', serif;
 }
 
-
+ 
 
   
   .container {
@@ -18,17 +18,29 @@
      text-align: center;
   }
 
+  h3 {
+    padding-bottom: 10px;
+  }
+
 header {
   width: 100%;
   color: white;
-  background-color: rgb(47, 47, 47);
+  background-color: rgb(77, 77, 77);
   text-transform: uppercase;
   font-weight: 300;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
+
 .heading {
   text-align: center;
   margin: 10px auto;
   padding: 10px;
+ 
+}
+
+.heading p {
+  color: rgba(104,103,103,0.5);
 }
 
 form {
@@ -41,26 +53,39 @@ fieldset {
   border: none;
 }
 
+fieldset p {
+  color: rgba(104,103,103,0.5);
+}
+
+
+
 legend {
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
+  color: rgba(104,103,103,0.9);
 }
 
 .newsletter {
   margin-bottom: 16px;
-  margin-top: 16px;
+  margin-top: 18px;
 
-}
+ }
 .other {
   margin-top: 16px;
 }
 
+input::placeholder {
+  text-align: right;
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 14px;
+}
 
 input[type="text"],
 input[type="email"],
@@ -78,7 +103,7 @@ select {
   width: 100%;
   margin-bottom: 30px;
   border-radius: 5px;
-  
+  color: rgba(104,103,103,0.5);
 } 
 
 input[type="text"]:focus,
@@ -96,7 +121,8 @@ select:focus {
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 6px 10px 0;
+  margin: 0 8px 12px 0;
+  
  
 }
  
@@ -126,8 +152,25 @@ form p {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .user {
     display: flex;
-    flex-wrap: wrap;
   }
+  .user label {
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  .user input select {
+    width: 70%;
+  }
+  
+  form {
+    width: 70%;
+  }
+
+.user-zip {
+  display: flex;
+}
+ 
+
 }
