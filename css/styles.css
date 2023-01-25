@@ -14,12 +14,44 @@
     justify-content: center;
   }
 
+  .third-line {
+    height: 2px;
+    color: black;
+    background-color: black;
+    margin-bottom: 35px;
+    border-top: 1px solid black;
+  }
+
+  .first-line {
+    width: 95%;
+    height: 5px;
+    color: black;
+    background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+    border-style: inset;
+    border-top: 1px solid black;
+  }
+
+  .second-line {
+    width: 95%;
+    height: 2px;
+    color: black;
+    background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2px;
+    border-style: inset;
+    border-top: 1px solid black;
+  }
+
   h2 {
      text-align: center;
   }
 
   h3 {
     padding-bottom: 10px;
+    font-size: 1.32em;
   }
 
 header {
@@ -36,7 +68,7 @@ header {
   text-align: center;
   margin: 10px auto;
   padding: 10px;
- 
+  margin-top: 0;
 }
 
 .heading p {
@@ -49,12 +81,16 @@ form {
 }
 
 fieldset {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border: none;
 }
 
-fieldset p {
-  color: rgba(104,103,103,0.5);
+form p {
+  color: rgba(77,77,77);
+  opacity: 0.5;
+  font-style: italic;
+  text-align: center;
+ margin-bottom: 50px;
 }
 
 
@@ -74,13 +110,24 @@ label {
 .newsletter {
   margin-bottom: 16px;
   margin-top: 18px;
+}
 
- }
+.news {
+  margin-bottom: 15px;
+}
+
 .other {
   margin-top: 16px;
 }
 
 input::placeholder {
+  text-align: right;
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 14px;
+}
+
+textarea::placeholder {
   text-align: right;
   opacity: 0.5;
   font-style: italic;
@@ -101,7 +148,7 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   border-radius: 5px;
   color: rgba(104,103,103,0.5);
 } 
@@ -117,6 +164,7 @@ select:focus {
 
 #zipcode {
   width: 50%;
+  background-color: blanchedalmond;
 }
 
 input[type="radio"],
@@ -127,7 +175,7 @@ input[type="checkbox"] {
 }
  
 label.light {
-  font-weight: 300;
+  font-weight: 400;
   display: inline;
 }
 
@@ -143,21 +191,48 @@ button {
   margin: 0;
   outline: 0;
   padding: 15px;
-  margin-bottom: 30px;
-  
-}
-form p {
-  font-style: italic;
-  text-align: center;
-}
+  margin-bottom: 5px;
+  }
+
+  button:focus {
+    background-color: rgb(217, 143, 143);
+  }
+
+
 
 @media (min-width: 768px) {
   .user {
     display: flex;
   }
+
+   header {
+    padding-top: 3%;
+    padding-bottom: 3%;
+   }
+
+   .heading {
+    margin: 20px auto;
+   }
+
+   h3 {
+    font-size: 19px;
+   }
+
+
+   h2 {
+    font-size: 1.2em;
+   }
+
+   
+
+    .heading p {
+      font-size: 14px;
+    }
+
   .user label {
     width: 30%;
     margin-right: 10px;
+    font-size: 14px;
   }
 
   .user input select {
@@ -170,7 +245,51 @@ form p {
 
 .user-zip {
   display: flex;
+
+}
+
+#zipcode {
+  width: 25%;
+}
+
+.user-zip label {
+margin-right: 57px;
 }
  
+legend {
+  font-size: 17px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+textarea,
+select {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+button {
+  font-size: 15px;
+}
+
+form p {
+  font-size: 14px ;
+}
+
+label.light {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.first-line,
+.second-line {
+  width: 68%;
+}
 
 }
