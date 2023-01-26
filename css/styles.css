@@ -160,12 +160,16 @@ input[type="address"]:focus,
 textarea:focus,
 select:focus {
   border: 3px solid rgb(30, 30, 113);
-  background-color: blanchedalmond;
+  background-color: rgb(184, 228, 229);
+  transition: background-color 2s;
 }
 
 
 #zipcode {
   width: 50%;
+}
+
+#topics {
   background-color: blanchedalmond;
 }
 
@@ -196,9 +200,7 @@ button {
   margin-bottom: 5px;
   }
 
-  button:focus {
-    background-color: rgb(217, 143, 143);
-  }
+  
 
 
 
